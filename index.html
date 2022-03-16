@@ -4,11 +4,76 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock-Papper-Scissor</title>
+        <script src="js/script.js" defer> </script>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     
     <body>
-        
-        <script src="js/script.js" > </script>
+        <div class="overlay-msg">
+            <div class="btn-close"> x </div>
+            <p id="winmsg">Ryuk</p>
+            <button id="newGame">New Game</button>
+        </div>
+        <div class="header">
+            <p>Rock Paper Scissors</p>
+        </div>
+        <div  id="game-window" class="main-container">
+            <div class="border-wrap">
+            <div class="container">
+                <div class="container-title">
+                    <p> Player </p>
+                </div>    
+                <div class="player1">
+                    <div id="p1-score" class="score-panel">
+                        <p id="playerScore" class="score">0</p>
+                        <p>Score</p>
+                        <p id='player-msg' class="roundWinner"></p>        
+                    </div>
+                    <div id="p1-choices" class="choices">
+                        <div id="rock-p1" class="options" data-choice="rock">
+                            <img src="img/rock.png" alt="rock" class="option-img" data-choice="rock" width="125px">
+                            <p class="option-txt" data-choice="rock" >rock</p>
+                        </div>
+                        <div id="paper-p1" class="options" data-choice="paper">
+                            <img src="img/paper.jpeg" alt="paper" class="option-img" data-choice="paper" width="125px">
+                            <p class="option-txt" data-choice="paper">paper</p>
+                        </div>
+                        <div id="scissors-p1" class="options" data-choice="scissors">
+                            <img src="img/scissors.png"  alt="scissors" class="option-img" data-choice="scissors" width="125px">
+                            <p class="option-txt" data-choice="scissors"> sicssor</p>
+                        </div>
+                    </div>        
+                </div>
+            </div></div>
+            <div class="border-wrap pc">
+            <div class="container">
+                <div class="container-title">
+                    <p> Computer </p>
+                </div> 
+                <div class="player2">  
+                    <div id="p2-score" class="score-container">
+                        <div class="score-panel">
+                            <p id="pcScore" class="score">0</p>
+                            <p>Score</p>
+                            <p id='pc-msg' class="roundWinner"></p>
+                        </div>
+                    </div>
+                    <div id="p2-choices" class="choices">
+                        <div id="rock-pc" class="options" data-choice="rock">
+                            <img src="img/rock.png" alt="rock" class="option-img" data-choice="rock" width="125px">
+                            <p class="option-txt" data-choice="rock">rock</p>
+                        </div>
+                        <div id="paper-pc" class="options" data-choice="paper">
+                            <img src="img/paper.jpeg" alt="paper" class="option-img" data-choice="paper" width="125px">
+                            <p class="option-txt" data-choice="paper">paper</p>
+                        </div>
+                        <div id="scissors-pc" class="options" data-choice="scissors">
+                            <img src="img/scissors.png"  alt="scissors" class="option-img" data-choice="scissors" width="125px">
+                            <p class="option-txt" data-choice="scissors">sicssor</p>
+                        </div>
+                    </div>
+                </div>    
+            </div></div>    
+        </div>
     </body>
 </html>
-
